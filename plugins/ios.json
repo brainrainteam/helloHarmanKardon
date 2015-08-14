@@ -4,10 +4,24 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"CordovaBoilerPlatePlugin\"><param name=\"ios-package\" value=\"CordovaBoilerPlatePlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.jadisinteractive.com"
+        },
+        "org.crudworks.cordova.plugins.cordovaboilerplateplugin": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         }
     },
