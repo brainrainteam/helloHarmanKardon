@@ -45,6 +45,27 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        
+        
+          try {
+              console.log('Device name:'+device.platform);
+              
+              var success = function(message) {
+                 // alert(message);
+                   hkaudio.initialize(success, failure);
+              }
+              
+              var failure = function() {
+                 // alert("Error calling Hello Plugin");
+              }
+              
+              hkaudio.initialize(success, failure);
+          } catch (e) {
+              
+              console.log('Error: ' + e);
+          }
+
+
     }
 };
 

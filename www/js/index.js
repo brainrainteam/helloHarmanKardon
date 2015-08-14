@@ -45,6 +45,18 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        console.log(device.name);
+
+        var success = function(message) {
+            alert(message);
+        }
+        
+        var failure = function() {
+            alert("Error calling Hello Plugin");
+        }
+        
+      //  hello.greet("World", success, failure);
     }
 };
 

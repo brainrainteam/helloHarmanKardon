@@ -9,7 +9,39 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"CordovaBoilerPlatePlugin\"><param name=\"ios-package\" value=\"CordovaBoilerPlatePlugin\" /></feature>",
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"HKAudio\"><param name=\"ios-package\" value=\"HKAudio\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "libbz2.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libz.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libstdc++.dylib": [
+                        {
+                            "xml": false,
                             "count": 1
                         }
                     ]
@@ -21,7 +53,13 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         },
-        "org.crudworks.cordova.plugins.cordovaboilerplateplugin": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.jadisinteractive.com"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.jadisinteractive.com"
+        },
+        "com.brainrainsolutions.hkaudio": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         }
     },

@@ -7,10 +7,27 @@
         "is_top_level": true,
         "variables": {}
     },
-    "org.crudworks.cordova.plugins.cordovaboilerplateplugin": {
+    "cordova-plugin-device": {
         "source": {
             "type": "git",
-            "url": "https://github.com/brainrainteam/harman-kardon-cordova",
+            "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.brainrainsolutions.hkaudio": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/brainrainteam/harman-kardon-cordova.git",
             "subdir": "."
         },
         "is_top_level": true,
