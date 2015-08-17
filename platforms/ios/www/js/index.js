@@ -35,31 +35,46 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
+    
+    onHKDeviceStateUpdated: function(message) {
+        // Handle the online event
+        console.log("Message: " + message);
+    },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        
+      
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
+        
+        var success = function(message) {
+             console.log(message);
+            
+            //Start refreshing Device Info every 2 seconds
+            // hkaudio.startRefreshDeviceInfo(null, null);
+            
+            //Stop refreshing Device Info
+            //hkaudio.stopRefreshDeviceInfo(null, null);
+            
+            // hkaudio.getGroupCount(null, null);
+            // hkaudio.getDeviceCount(null, null);
+        }
+        
+        var failure = function() {
+            alert("Error calling HKAudio Plugin");
+        }
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        console.log('Device name:'+device.platform);
         
-        
-          try {
-              console.log('Device name:'+device.platform);
-              
-              var success = function(message) {
-                 // alert(message);
-                   hkaudio.initialize(success, failure);
-              }
-              
-              var failure = function() {
-                 // alert("Error calling Hello Plugin");
-              }
-              
-              hkaudio.initialize(success, failure);
+        try {
+            
+               hkaudio.initialize(success, failure);
+
           } catch (e) {
               
               console.log('Error: ' + e);

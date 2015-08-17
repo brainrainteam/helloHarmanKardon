@@ -27,7 +27,7 @@
     "com.brainrainsolutions.hkaudio": {
         "source": {
             "type": "git",
-            "url": "https://github.com/brainrainteam/harman-kardon-cordova.git",
+            "url": "https://github.com/brainrainteam/harman-kardon-cordova",
             "subdir": "."
         },
         "is_top_level": true,
