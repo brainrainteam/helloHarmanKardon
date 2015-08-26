@@ -5,25 +5,6 @@
     },
     "config_munge": {
         "files": {
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"HKAudio\"><param name=\"ios-package\" value=\"HKAudio\" /></feature>",
-                            "count": 1
-                        }
-                    ],
-                    "/widget": []
-                }
-            },
             "framework": {
                 "parents": {
                     "libbz2.dylib": [
@@ -43,22 +24,60 @@
                             "xml": false,
                             "count": 1
                         }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"HKAudio\"><param name=\"ios-package\" value=\"HKAudio\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
+                        }
                     ]
                 }
             }
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-console": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         },
-        "cordova-plugin-console": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         },
         "com.jadisinteractive.hkaudio": {
+            "PACKAGE_NAME": "com.jadisinteractive.com"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.jadisinteractive.com"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         }
     },

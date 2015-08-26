@@ -47,7 +47,11 @@ var app = {
         console.log('Received Event: ' + id);
 
         console.log(device.name);
-
+        
+        var searchingForDevices = function(message) {
+            console.log(message);
+        }
+        
         var success = function(message) {
             alert(message);
         }
