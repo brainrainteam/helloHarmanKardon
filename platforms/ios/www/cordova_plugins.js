@@ -22,8 +22,8 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.brainrainsolutions.hkaudio/www/hkaudio.js",
-        "id": "com.brainrainsolutions.hkaudio.hkaudio",
+        "file": "plugins/com.jadisinteractive.hkaudio/www/hkaudio.js",
+        "id": "com.jadisinteractive.hkaudio.HKAudio",
         "clobbers": [
             "hkaudio"
         ]
@@ -35,7 +35,7 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.0.0",
     "cordova-plugin-device": "1.0.2-dev",
     "cordova-plugin-console": "1.0.1",
-    "com.brainrainsolutions.hkaudio": "0.7.0"
+    "com.jadisinteractive.hkaudio": "0.7.0"
 }
 // BOTTOM OF METADATA
 });

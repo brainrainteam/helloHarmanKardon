@@ -24,10 +24,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.brainrainsolutions.hkaudio": {
+    "com.jadisinteractive.hkaudio": {
         "source": {
             "type": "git",
-            "url": "https://github.com/brainrainteam/harman-kardon-cordova",
+            "url": "http://github.com/JadisInteractive/harman-kardon-cordova.git",
             "subdir": "."
         },
         "is_top_level": true,

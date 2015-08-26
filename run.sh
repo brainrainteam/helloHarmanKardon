@@ -1,2 +1,2 @@
-cordova build ios
-cordova run ios
+cordova prepare ios
+cordova run ios --device

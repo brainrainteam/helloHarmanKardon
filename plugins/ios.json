@@ -15,14 +15,13 @@
                         {
                             "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
                             "count": 1
-                        }
-                    ],
-                    "/widget": [
+                        },
                         {
                             "xml": "<feature name=\"HKAudio\"><param name=\"ios-package\" value=\"HKAudio\" /></feature>",
                             "count": 1
                         }
-                    ]
+                    ],
+                    "/widget": []
                 }
             },
             "framework": {
@@ -59,7 +58,7 @@
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         },
-        "com.brainrainsolutions.hkaudio": {
+        "com.jadisinteractive.hkaudio": {
             "PACKAGE_NAME": "com.jadisinteractive.com"
         }
     },
