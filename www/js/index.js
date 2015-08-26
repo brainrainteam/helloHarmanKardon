@@ -56,7 +56,8 @@ var app = {
             alert("Error calling Hello Plugin");
         }
         
-      //  hello.greet("World", success, failure);
+        hkaudio.initialize(success, failure);
+        
     }
 };
 
